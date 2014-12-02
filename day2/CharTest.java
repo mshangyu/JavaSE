@@ -1,3 +1,4 @@
+//日期  作者   时间
 public class CharTest{
 	public  static  void main(String args[]){
 		char eChar ='J';
