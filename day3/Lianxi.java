@@ -11,6 +11,7 @@ public class Lianxi{
 				System.out.println("可以被整除的数为："+i);
 				w++;
 			}
+			.
 		}
 	}
 }
