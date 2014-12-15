@@ -1,0 +1,17 @@
+package employee;
+
+public class Test extends Employee {
+
+	public static void main(String[] args) {
+		//固定月薪员工
+		SalariedEmployee se=new SalariedEmployee("google",2000,5);
+		System.out.println("name:"+se.getName()+"\tSalary:"+se.getSalary(5));
+		System.out.println("name:"+se.getName()+"\tSalary:"+se.getSalary(10));
+		
+		//小时工
+		HourlyEmployee he=new HourlyEmployee("baidu",2,10,170);
+		System.out.println("name:"+he.getName()+"\tSalary:"+he.getSalary(3));
+		System.out.println("name:"+he.getName()+"\tSalary:"+he.getSalary(6));
+	}
+
+}

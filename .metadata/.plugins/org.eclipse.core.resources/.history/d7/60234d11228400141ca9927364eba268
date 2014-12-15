@@ -1,0 +1,11 @@
+package weapons;
+
+import weapon.Weapon;
+
+public class Tank extends Weapon {
+
+	public Tank() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

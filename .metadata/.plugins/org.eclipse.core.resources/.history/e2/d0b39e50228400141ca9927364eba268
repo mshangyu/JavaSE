@@ -1,0 +1,29 @@
+import weapons.Army;
+import weapons.Flighter;
+import weapons.Tank;
+import weapons.WarShip;
+
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Army a=new Army(3);
+		
+		Tank D = new Tank();
+		a.addWeapon(D);
+		Flighter f=new Flighter();
+		a.addWeapon(f);
+		WarShip h=new WarShip();
+		a.addWeapon(h);
+
+		
+		a.attackAll();
+		a.moveAll();
+	}
+
+
+}

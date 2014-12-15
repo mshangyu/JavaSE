@@ -1,0 +1,15 @@
+package employee;
+
+public class SalesEmployee extends Employee {
+	private double sales;
+	private float percent;
+	public SalesEmployee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public SalesEmployee(String name, int birthMonth,double sales,float percent) {
+		super(name, birthMonth);
+		// TODO Auto-generated constructor stub
+	}
+
+}

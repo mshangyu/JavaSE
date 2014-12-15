@@ -1,0 +1,13 @@
+
+public class ExcepionDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr=new int[5];
+		arr[5]=1232;//数组越界
+	}
+
+}

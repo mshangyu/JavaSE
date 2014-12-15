@@ -1,0 +1,15 @@
+package employee;
+
+public class Employee {
+	private String name;
+	private double salary;
+	private int birthMonth;
+	public Employee(String name, double salary, int birthMonth) {
+		super();
+		this.name = name;
+		this.salary = salary;
+		this.birthMonth = birthMonth;
+	}
+	
+
+}

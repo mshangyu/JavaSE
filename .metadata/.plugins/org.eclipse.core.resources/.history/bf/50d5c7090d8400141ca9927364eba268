@@ -1,0 +1,11 @@
+package weapons;
+
+import weapon.Weapon;
+
+public class WarShip extends Weapon {
+
+	public WarShip() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

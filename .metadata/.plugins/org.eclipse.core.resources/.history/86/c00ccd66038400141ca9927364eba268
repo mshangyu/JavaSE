@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package employee;
+
+
+public class HourlyEmployee extends Employee {
+	private double hourPay;
+	private int    hours;
+	
+	public HourlyEmployee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public HourlyEmployee(String name, int birthMonth) {
+		super(name, birthMonth);
+		// TODO Auto-generated constructor stub
+	}
+
+}

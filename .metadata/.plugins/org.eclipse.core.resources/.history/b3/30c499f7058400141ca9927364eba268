@@ -1,0 +1,15 @@
+package employee;
+
+public class BasePlusSalesEmployee extends SalesEmployee {
+
+	public BasePlusSalesEmployee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public BasePlusSalesEmployee(String name, int birthMonth, double sales,
+			float percent) {
+		super(name, birthMonth, sales, percent);
+		// TODO Auto-generated constructor stub
+	}
+
+}
