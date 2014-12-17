@@ -1,0 +1,16 @@
+
+public class Chang {
+	public static void main(String[] args) {
+		
+	}
+
+}
+class ChangFang{
+	public int getMian(int width,int length){
+		return width*length;
+		
+	}
+	public int getZhou(int width,int length){
+		return (width+length)*2;
+	}
+}

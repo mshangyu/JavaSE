@@ -1,0 +1,18 @@
+
+public class Phone {
+	String brand;
+	String color;
+	int price;
+	
+	public void call(String name){
+		System.out.println("给"+name+"打电话");
+	}
+	public void senMessage(){
+		System.out.println("群发短信");
+	}
+	public void shangWang(){
+		System.out.println("上网");
+	}
+	
+
+}

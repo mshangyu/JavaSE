@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="employee.Employee"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
+<fullyQualifiedTypeName name="employee.SalariedEmployee"/>
+<fullyQualifiedTypeName name="employee.HourlyEmployee"/>
+<fullyQualifiedTypeName name="employee.SalesEmployee"/>
+<fullyQualifiedTypeName name="employee.BasePlusSalesEmployee"/>
+<fullyQualifiedTypeName name="weapon.Assaultable"/>
+<fullyQualifiedTypeName name="weapon.Mobile"/>
+<fullyQualifiedTypeName name="weapons.Tank"/>
+<fullyQualifiedTypeName name="weapons.Army"/>
+<fullyQualifiedTypeName name="weapons.Flighter"/>
+<fullyQualifiedTypeName name="weapons.WarShip"/>
+<fullyQualifiedTypeName name="weapon.Weapon"/>
+<fullyQualifiedTypeName name="java.beans.Introspector"/>
+<fullyQualifiedTypeName name="ExcepionDemo.Test"/>
+<fullyQualifiedTypeName name="java.security.PublicKey"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="sun.reflect.generics.tree.VoidDescriptor"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.resolver.helpers.PublicId"/>
+<fullyQualifiedTypeName name="javax.swing.text.ChangedCharSetException"/>
+<fullyQualifiedTypeName name="java.lang.Runtime"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="Demo"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="FuException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Phone1"/>
+<fullyQualifiedTypeName name="Test"/>
+<fullyQualifiedTypeName name="ChangFang"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

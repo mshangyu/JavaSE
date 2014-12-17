@@ -1,0 +1,12 @@
+
+public class Array2 {
+	public static void main(String[] args) {
+		
+	}
+
+	
+	public static int sum(int i,int j){
+		return i+j;
+		
+	}
+}

@@ -6,12 +6,12 @@ import javax.swing.text.ChangedCharSetException;
 
 public class ArrayDemo5 {
 	public static void main(String[] args) {
-		int[] arr={1,2,34,45,56};
+		int[] arr={1,2,36,45};
 		change(arr);
 	}
 	public static void change(int[] arr){
 		for(int start=0,end=arr.length-1;start<=end;start++,end--){
-			int temp=start;
+			int temp=arr[start];
 			arr[start]=arr[end];
 			arr[end]=temp;
 		}
