@@ -1,0 +1,30 @@
+
+public class PhoneDemo {
+	public static void main(String[] args) {
+		Phone bBPhone=new Phone();
+		bBPhone.setAge(25);
+		bBPhone.setBrand("apple");
+		bBPhone.show();
+	}
+
+}
+class Phone{
+	private String brand;
+	private int age;
+	
+	public void setBrand(String b){
+		brand=b;
+	}
+	public String getBrand(){
+		return brand;
+	}
+	public void setAge(int m){
+		age=m;
+	}
+	public int getInt(){
+		return age;
+	}
+	public void show(){
+		System.out.println(brand+"==="+age);
+	}
+}

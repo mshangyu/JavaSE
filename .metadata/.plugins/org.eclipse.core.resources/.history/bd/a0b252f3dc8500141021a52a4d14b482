@@ -1,0 +1,30 @@
+
+public class Chang1 {
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+class Fang{
+	private int width;
+	private int length;
+	
+	public Fang(){}
+	public Fang(int width,int length){
+		this.width=width;
+		this.length=length;
+	}
+	public void setWidth(String width){
+		this.width=width;
+	}
+	public String getWidth(){
+		return width;
+	}
+	public void setLength(String length){
+		this.length=length;
+	}
+	public String getLength(){
+		return length;
+	}
+}
