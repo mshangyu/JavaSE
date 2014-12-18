@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class GuessNumber {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("请输入一个数据");
+		int guessnumber=scanner.nextInt();
+		
+		int number=(int)Math.random()*100+1;
+		
+		if(guessnumber>number){
+			System.out.println("你猜得数据大了");
+		}else if(guessnumber<number){
+			System.out.println("你猜的数据小了");
+		}else{
+			System.out.println("恭喜你猜中了！");
+		}
+	}
+
+}

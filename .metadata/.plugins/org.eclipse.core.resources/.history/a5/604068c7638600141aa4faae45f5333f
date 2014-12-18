@@ -1,0 +1,54 @@
+package b_List;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+	public static void main(String[] args) {
+		LinkedList list=new LinkedList();
+		//1\增加
+		list.add("hello");
+		list.add("world");
+		list.add("java");
+		list.add("shujuku");
+		
+		list.add(2,"hellokimi");
+		
+		
+		LinkedList a1=new LinkedList();
+		a1.add("kk");
+		a1.add("bb");
+		a1.add("ll");
+		
+		list.addFirst("hehe");
+		list.addLast("zaijian");
+		
+	//	list.clear();
+		
+	//	list.contains("haha");
+	//	System.out.println(list.contains("haha"));
+	
+	//	list.get(2);
+	//	System.out.println(list.get(2));
+		
+	//	list.element();  //获取但不移除此列表的第一个元素
+	//	System.out.println(list.element());
+		
+	//	list.removeFirst();  //移除并返回此列表的第一个元素
+	//	System.out.println(list.removeFirst());
+		
+	//	list.removeLast(); //移除并返回此列表的最后一个元素
+	//	System.out.println(list.removeLast());
+		
+	//	list.size();
+	//	System.out.println(list.size());
+		
+	//	list.addAll(a1);
+	//	System.out.println(list);
+		
+		list.set(2, "baobao");
+		System.out.println(list);
+		
+		System.out.println(list);
+	}
+
+}

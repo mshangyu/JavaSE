@@ -1,0 +1,15 @@
+
+public class ArrayDemo {
+	public static void main(String[] args) {
+		//定义一个数组
+		int[] arr={11,44,55,22,33};
+		
+		//遍历这个数组
+		ArrayTools at=new ArrayTools();
+		at.printArray(arr);
+	
+	}
+
+}
+
+

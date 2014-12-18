@@ -1,0 +1,20 @@
+
+public class FatherDemo {
+	public static void main(String[] args) {
+		Son son=new Son();
+		son.show();
+
+	}
+
+}
+class Son extends Father{
+	public int num2=12;
+	public void show(){
+		System.out.println(num);
+		System.out.println(num2);
+	}
+}
+
+class Father{
+	public int num=20;
+}

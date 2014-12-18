@@ -5,6 +5,20 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+
+class A{
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+}
+
+
+
+
+
 public class ListDemo {
 	public static void main(String[] args) {
 		/*list可以存储各种数据，元素可以重复，有序[可以使用索引访问元素]
@@ -27,12 +41,20 @@ public class ListDemo {
 //		
 //		
 //		//2\在指定位置插入
-//		list.add(3,"Google");  //在下标为三的地方插入
+		list.add(3,"Google");  //在下标为三的地方插入
 //		for (int i = 0; i < list.size(); i++) {
 //			System.out.println(list.get(i));
 //		}//使用for循环输出元素
 //		
-//		System.out.println("======================");
+		
+		//list中使用equals方法判断元素是否相同
+		System.out.println(list);
+		System.out.println("Android-002"+list.indexOf(new String("Android-002")));
+		
+		list.remove(new A());
+		list.remove(new A());
+		System.out.println(list);
+		System.out.println("======================");
 //		
 //		//3、删除操作
 //		list.remove(3);//移除某个位置的
@@ -76,20 +98,20 @@ public class ListDemo {
 //		
 		System.out.println("======================");
 		
-		//ListIterator:
-		ListIterator iit=list.listIterator();
-		while (iit.hasNext()) {
-			Object object = (Object) iit.next();
-			//iit.add("Alibaba");
-			System.out.println(object);
-		}
-		
-		while (iit.hasPrevious()) {
-			System.out.println(iit.previous());
-			
-		}
-		
-		System.out.println(list);
+//		//ListIterator:
+//		ListIterator iit=list.listIterator();
+//		while (iit.hasNext()) {
+//			Object object = (Object) iit.next();
+//			//iit.add("Alibaba");
+//			System.out.println(object);
+//		}
+//		
+//		while (iit.hasPrevious()) {
+//			System.out.println(iit.previous());
+//			
+//		}
+//		
+//		System.out.println(list);
 		System.out.println("======================");
 		 
 		
