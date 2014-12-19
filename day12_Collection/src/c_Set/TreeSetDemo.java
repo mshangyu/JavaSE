@@ -3,17 +3,20 @@ package c_Set;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+import bean.ComparatorByLength;
+
 class Errs{
 	
 }
 
-/*TreeSet:要求添加元素必须具有可比性[该类必须实现comparable]
+/*TreeSet:
+ * 1、要求添加元素必须具有可比性[该类必须实现comparable]
  * 元素比较标准：compareTo（）==0 
  * */
 
 public class TreeSetDemo {
 	public static void main(String[] args) {
-		TreeSet ts=new TreeSet();
+		TreeSet ts=new TreeSet(new ComparatorByLength());
 		//
 //		ts.add(3);
 //		ts.add(23);
@@ -26,6 +29,7 @@ public class TreeSetDemo {
 		ts.add("nba");
 		ts.add("cba");
 		ts.add("cuba");
+		ts.add("xas");
 		ts.add("apple");
 		ts.add("hello");
 		
@@ -38,10 +42,10 @@ public class TreeSetDemo {
 			System.out.println(object);
 		}
 		
-		System.out.println(ts);
-		System.out.println(ts.first());
-		System.out.println(ts.last());
-		
+//		System.out.println(ts);
+//		System.out.println(ts.first());
+//		System.out.println(ts.last());
+//		
 //		TreeSet ts2=new TreeSet();
 //		ts2.add(new Errs());
 //		ts2.add(new Errs());

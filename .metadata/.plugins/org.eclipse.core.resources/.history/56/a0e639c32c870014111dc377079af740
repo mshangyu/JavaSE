@@ -1,0 +1,18 @@
+package d_Map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+	public static void main(String[] args) {
+		Map<Integer, String> map=new HashMap<>();
+		//1、添加元素
+		//map.put(123, "Google");
+		System.out.println(map.put(123, "apple"));//key不存在 返回null
+		System.out.println(map.put(123, "Google"));//put返回key上次对应的value
+		System.out.println(map.put(321,"baidu"));
+		System.out.println(map.put(11, "alibaba"));
+	
+	}
+
+}
