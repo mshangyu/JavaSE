@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class ArrayListDemo2 {
+	public static void main(String[] args) {
+		ArrayList array=new ArrayList();
+		array.add("hello");
+		array.add("world");
+		array.add("java");
+		array.add(10);
+		
+		Iterator it=array.iterator();
+		while (it.hasNext()) {
+			String object = (String) it.next();
+			System.out.println(object);
+		}
+
+	}
+
+}

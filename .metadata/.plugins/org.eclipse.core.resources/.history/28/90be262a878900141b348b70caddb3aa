@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+
+public class ArrayListTest2 {
+	public static void main(String[] args) {
+		ArrayList array=new ArrayList();
+		Student s1=new Student("°×¹Ç¾«",18);
+		Student s2=new Student("Ö©Öë¾«",19);
+		Student s3=new Student("ºÚĞÜ¾«",20);
+		Student s4=new Student("¹ÛÒô½ã½ã",17);
+		Student s5=new Student("ÉñÏÉ½ã½ã",15);
+		Student s6=new Student("°×¹Ç¾«",15);
+		
+		
+
+	}
+
+}

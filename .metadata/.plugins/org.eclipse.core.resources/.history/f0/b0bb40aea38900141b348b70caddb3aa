@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class ArrayListDemo3 {
+	public static void main(String[] args) {
+		ArrayList<Person> array=new ArrayList<Person>();
+		
+		Person p1=new Person("林黛玉",18,"北京");
+		Person p2=new Person("王熙凤",20,"上海");
+		Person p3=new Person("刘姥姥",60,"天津");
+		Person p4=new Person("贾宝玉",20,"海南");
+		Person p5=new Person("薛宝钗",19,"台湾");
+		
+		array.add(p1);
+		array.add(p2);
+		array.add(p3);
+		array.add(p4);
+		array.add(p5);
+		
+		for(int x=0;x<array.size();x++){
+			Person person=array.get(x);
+			System.out.println(person);
+		}
+		
+		Iterator<Person> iterator=array.iterator();
+		while (iterator.hasNext()) {
+			Person person =iterator.next();
+			System.out.println(person);
+		}
+		
+	}
+
+}

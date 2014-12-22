@@ -1,0 +1,34 @@
+import java.util.HashSet;
+
+
+public class HashSetDemo {
+	public static void main(String[] args) {
+//		HashSet<String> hs=new HashSet<String>();
+//		
+//		hs.add("hello");
+//		hs.add("world");
+//		hs.add("java");
+//		System.out.println(hs);
+
+		HashSet<Student> hs=new HashSet<Student>();
+		
+		Student s1=new Student("ÖìµÂ",35 );
+		Student s2=new Student("³ÂÒã",30 );
+		Student s3=new Student("ÁÖ±ë",33 );
+		Student s4=new Student("ÅíµÂ»³",40 );
+		Student s5=new Student("ÅíµÂ»³",40 );
+		Student s6=new Student("ÖìµÂ",35 );
+		Student s7=new Student("³ÂÒã",50 );
+		
+		hs.add(s1);
+		hs.add(s2);
+		hs.add(s3);
+		hs.add(s4);
+		hs.add(s5);
+		hs.add(s6);
+		hs.add(s7);
+		
+		System.out.println(hs);
+	}
+
+}

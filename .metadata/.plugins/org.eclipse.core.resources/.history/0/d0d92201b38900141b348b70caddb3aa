@@ -1,0 +1,15 @@
+import java.util.HashSet;
+
+
+public class HashSetDemo {
+	public static void main(String[] args) {
+		HashSet<String> hs=new HashSet<String>();
+		
+		hs.add("hello");
+		hs.add("world");
+		hs.add("java");
+		System.out.println(hs);
+
+	}
+
+}
