@@ -1,0 +1,14 @@
+
+public class Generic {
+	public static void test(Base<Object>base) {
+		System.out.println("this is test");
+
+	}
+	public static void main(String[] args) {
+		Base<String> base=new Base<>();
+		test(base);
+	}
+
+}
+
+class Base<String>{}

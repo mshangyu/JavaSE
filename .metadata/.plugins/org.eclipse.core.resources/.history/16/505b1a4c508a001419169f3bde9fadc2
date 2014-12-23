@@ -1,0 +1,18 @@
+/*容器：数组---〉集合
+ * 
+ * */
+public class ArraysDemo {
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public static void run1(){
+		String[] str={"baidu","google","alibab"};
+		System.out.println(str[0]);
+		for (String string : str) {
+			System.out.println(string);
+		}
+	}
+
+}

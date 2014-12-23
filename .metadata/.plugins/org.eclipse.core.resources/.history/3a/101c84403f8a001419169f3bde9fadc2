@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+/*Collections 是集合框架的工具类 方法都是静态的 ==类方法 
+ * 
+ * */
+public class CollectionsDemo {
+	public static void main(String[] args) {
+	List<String> list =new ArrayList<String>();
+	list.add("java");
+	list.add("oracle");
+	list.add("abcd");
+	list.add("baidu");
+	list.add("google");
+	list.add("facebook");
+	
+	for(String string:list){
+		System.out.println(string);
+	}
+
+	}
+
+}

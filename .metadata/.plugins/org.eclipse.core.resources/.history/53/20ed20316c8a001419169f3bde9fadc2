@@ -1,0 +1,25 @@
+
+public class Test<String> {
+	
+	public Test(String name){
+		System.out.println(name);
+	}
+	
+	
+	public static void main(String[] args) {
+		Test<String> test =new Test<String>("hello");
+		More<String,Integer> more=new More<String,Integer>("lili",20);
+		
+
+	}
+
+}
+
+class More<String,Integer>{
+	String nameString;
+	Integer ageInteger;
+	public String show(){
+		return name;
+	}
+	
+}

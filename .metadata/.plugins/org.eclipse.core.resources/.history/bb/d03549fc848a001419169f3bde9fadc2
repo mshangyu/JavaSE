@@ -1,0 +1,13 @@
+/*czbk
+ * 		"jc"   基础班
+ * 					姓名--年龄
+ * 		"jy"   就业班
+ * 					姓名--年龄
+ * */
+public class HashMapTest {
+	public static void main(String[] args) {
+		
+
+	}
+
+}

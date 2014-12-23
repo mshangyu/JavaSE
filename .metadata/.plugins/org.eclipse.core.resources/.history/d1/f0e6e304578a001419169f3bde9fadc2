@@ -1,0 +1,10 @@
+/*泛型：在程序中使用〈〉》来指定具体类型
+ *     可以应用在类的定义     接口定义    方法定义 集合
+ * */
+public class GenericDemo {
+	public static void main(String[] args) {
+		
+
+	}
+
+}

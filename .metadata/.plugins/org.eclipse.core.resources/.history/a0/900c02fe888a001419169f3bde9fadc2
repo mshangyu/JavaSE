@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+/*假设hashmap集合的元素是arraylist 有三个 每一个arraylist集合的值是字符串 请遍历
+ * 
+ * 结果  三国演义 
+ * 			吕布
+ * 			周瑜
+ * 	笑傲江湖
+ *        令狐冲
+ *        林平之
+ *  神雕侠侣
+ *        郭靖 
+ *        杨过
+ * 
+ * */
+public class HashMapTest2 {
+	public static void main(String[] args) {
+		HashMap<String, ArrayList<String>> hs =new HashMap<String, ArrayList<String>>();
+		ArrayList<String> ay1=new ArrayList<String>();
+		ay1.add("吕布");
+		ay1.add("周瑜");
+		ArrayList<String> ay2=new ArrayList<String>();
+		ay2.add("令狐冲");
+		ay2.add("林平之");
+		ArrayList<String> ay3=new ArrayList<String>();
+		ay3.add(" 郭靖 ");
+		ay3.add(" 杨过");
+		
+		hs.put("三国演义", ay1);
+		hs.put("笑傲江湖", ay2);
+		hs.put("神雕侠侣", ay3);
+		
+		Set<String>  set=hs.keySet();
+		for (String key : set) {
+			System.out.println(key);
+			
+			ArrayList<String> value=hs.get(key);
+			for (String s : value) {
+				System.out.println(s);
+			}
+			}
+		}
+	}
+
+}

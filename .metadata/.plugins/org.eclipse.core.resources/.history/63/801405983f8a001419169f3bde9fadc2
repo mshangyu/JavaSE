@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+
+
+/*Collections 是集合框架的工具类 方法都是静态的 ==类方法 
+ * Tree set\map 有自然排序 集合比较器 在插入的时候完成排序
+ * list ：默认不能排序
+ * */
+public class CollectionsDemo {
+	public static void main(String[] args) {
+	List<String> list =new ArrayList<String>();
+	list.add("java");
+	list.add("oracle");
+	list.add("abcd");
+	list.add("baidu");
+	list.add("google");
+	list.add("facebook");
+	
+	for(String string:list){
+		System.out.println(string);
+	}
+	System.out.println("-----------------------");
+	
+	Collections.sort(list);
+	for(String string:list){
+		System.out.println(string);
+	}
+	} 
+
+}

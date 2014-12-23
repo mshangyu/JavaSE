@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+
+public class PokerDemo {
+	public static void main(String[] args) {
+		ArrayList<String> array=new ArrayList<String>();
+		
+		String[] numbers={"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+		String[] colors ={"黑桃","红桃","梅花","方块"};
+		for (String color : colors) {
+			for (String number : numbers) {
+				array.add(color.concat(number);
+			}
+		}
+		array.add("大王");
+		array.add("小王");
+		
+	}
+
+}
