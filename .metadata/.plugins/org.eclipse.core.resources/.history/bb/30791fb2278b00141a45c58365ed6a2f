@@ -1,0 +1,12 @@
+package mao;
+
+public class Ticket extends Thread {
+	@Override
+	public void run() {
+		int tickets =100;
+		if(tickets>0){
+			System.out.println(getName()+tickets+"’≈∆±");
+		}
+	}
+
+}
