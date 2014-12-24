@@ -1,0 +1,12 @@
+
+public class TicketDemo {
+
+	public static void main(String[] args) {
+		Ticket t1=new Ticket("窗口1");
+		Ticket t2=new Ticket("窗口2");
+		Ticket t3=new Ticket("窗口3");
+		Ticket t4=new Ticket("窗口4");
+
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class Ticket extends Thread {
+	
+	@Override
+	public void run() {
+		    int ticket=10;
+		    while(true);
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

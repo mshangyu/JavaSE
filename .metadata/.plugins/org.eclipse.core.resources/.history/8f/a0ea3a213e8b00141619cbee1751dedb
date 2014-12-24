@@ -1,0 +1,14 @@
+import sun.awt.windows.ThemeReader;
+
+
+public class Ticket2 extends ThemeReader {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

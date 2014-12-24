@@ -1,7 +1,7 @@
 
 public class Share implements Runnable {
-	int ticket =10;
-	int num=0;
+	private static int ticket =10;
+	private static int num=0;
 	
 	@Override
 	public void run() {
