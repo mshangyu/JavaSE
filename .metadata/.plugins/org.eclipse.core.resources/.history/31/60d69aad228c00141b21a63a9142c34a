@@ -1,0 +1,39 @@
+/*在catch里面有一个return语句 请问finally里面的代码还会执行吗？如果会，请问是在return前还是在return后面呢？
+ * 
+ * 
+ * */
+package 异常;
+
+public class FinallyDemo2 {
+	public static void main(String[] args) {
+		//show();
+		System.out.println(getInt());
+	}
+
+	public static int getInt(){
+		int a=10;
+		try {
+			a=20;
+			System.out.println(a/0);
+		} catch (ArithmeticException e) {
+			a=30;
+			return a;
+		}finally{
+			a=40;
+			return a;
+		}
+	}
+	
+//	public static void show() {
+//		try {
+//			System.out.println("AAAA");
+//			System.out.println(10 / 0);
+//			System.out.println("BBBBBB");
+//		} catch (ArithmeticException e) {
+//			System.out.println("CCCC");
+//			return;
+//		} finally {
+//			System.out.println("DDDD");
+//		}
+//	}
+}

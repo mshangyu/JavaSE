@@ -1,0 +1,17 @@
+
+package “Ï≥£;
+
+public class TeacherTestDemo {
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+class ScoreException extends Exception{
+	public ScoreException(){}
+	public ScoreException(String s){
+		super(s);
+	}
+}
+class 
