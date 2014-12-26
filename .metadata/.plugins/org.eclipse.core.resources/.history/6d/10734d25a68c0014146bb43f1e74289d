@@ -1,0 +1,13 @@
+package java50道练习题;
+
+public class Java4正整数分解质因数 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

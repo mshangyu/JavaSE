@@ -1,0 +1,29 @@
+package priority;
+
+public class SleepDemo extends Thread {
+	@Override
+	public void run() {
+		super.run();
+		System.out.println("休眠5秒");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println(getName());
+		System.out.println("休眠5秒开始");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println("main开始");
+		SleepDemo sd=new SleepDemo();
+		sd.start();
+		
+		System.out.println(sd.getName());
+		System.out.println("main结束");
+
+	}
+
+}
