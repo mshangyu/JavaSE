@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="ssh://maoshangyu%40gmail.com@coding.net/mshangyu/Test.git"/>
+		<item value="https://coding.net/mshangyu/Test.git"/>
+		<item value="http://coding.net/mshangyu/Test.git"/>
+		<item value="ssh://coding.net/mshangyu/Test.git"/>
+		<item value="http://maoshangyu%40gmail.com@coding.net/mshangyu/Test.git"/>
+		<item value="maoshangyu%40gmail.com@coding.net:mshangyu/Test.git"/>
+		<item value="mshangyu%40gmail.com@coding.net:mshangyu/Test.git"/>
+		<item value="mshangyu@coding.net:mshangyu/Test.git"/>
+		<item value="mshnagyu@coding.net:mshangyu/Test.git"/>
+		<item value="ssh://mshangyu@coding.net/mshangyu/Test.git"/>
+	</list>
+	<section name="PushToGerritPage">
+	</section>
+</section>

@@ -1,7 +1,0 @@
-package bean;
-
-import java.util.Comparator;
-
-public class ComparatorByAge implements Comparator<T> {
-
-}

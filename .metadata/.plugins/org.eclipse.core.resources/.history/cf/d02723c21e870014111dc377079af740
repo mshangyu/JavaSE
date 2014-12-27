@@ -1,9 +1,0 @@
-package c_Set;
-//使用比较器起进行排序
-public class TreeSetDemo3 {
-	public static void main(String[] args) {
-		
-
-	}
-
-}

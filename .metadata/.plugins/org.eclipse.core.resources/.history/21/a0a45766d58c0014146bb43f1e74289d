@@ -20,7 +20,7 @@ public class Java6公约数和公倍数 {
 		
 		//int num=m*n/最大公约数
 		int num=m*n;
-		while(m>n){
+		while(){
 			if (!(n==0)) {
 				m=n;
 				n=m%n;
@@ -28,7 +28,6 @@ public class Java6公约数和公倍数 {
 					System.out.println("最大公约数是："+m);
 					int c=num/m;
 					System.out.println("最小公倍数是："+c);
-					break;
 				}
 			}
 		}
