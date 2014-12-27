@@ -1,0 +1,38 @@
+package IO流;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+/*
+ * 一个标准的字符输出流对象 写数据
+ * 
+ * */
+
+public class FileWriterDemo加入异常 {
+	public static void main(String[] args) {
+		FileWriter fw;
+		try {
+			System.out.println(10/0);
+			fw = new FileWriter("fw.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			fw.write("helloworld");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

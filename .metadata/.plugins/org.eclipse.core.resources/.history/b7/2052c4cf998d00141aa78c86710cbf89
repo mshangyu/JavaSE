@@ -1,0 +1,54 @@
+package IO流;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CopyFileDemo加入异常 {
+	public static void main(String[] args) {
+		// 封装数据源
+		FileReader fr = null;
+		try {
+			fr = new FileReader("IODemo.java");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// 封装目的地
+		FileWriter fw = null;
+		try {
+			fw = new FileWriter("d:\\Copy.java");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// 读取数据并且写出数据
+		int ch = 0;
+		try {
+			while ((ch = fr.read()) != -1) {
+				fw.write(ch);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// 释放资源
+		try {
+			fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			fr.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

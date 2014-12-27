@@ -1,0 +1,18 @@
+package IO流;
+
+import java.io.FileWriter;
+
+/*
+ * 一个标准的字符输出流对象 写数据
+ * 
+ * */
+
+public class FileWriterDemo加入异常 {
+	public static void main(String[] args) {
+		FileWriter  fw=new FileWriter("fw.txt");
+		fw.write("hellow");
+		fw.close();
+
+	}
+
+}

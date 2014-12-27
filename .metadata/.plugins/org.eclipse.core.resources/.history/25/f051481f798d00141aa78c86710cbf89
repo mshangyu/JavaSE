@@ -1,0 +1,17 @@
+/*
+ * 字符输入流的操作步骤：
+ *  1、创建字符输入流的对象
+ *  2、读取数据、并显示在控制台
+ *  3、释放资源
+ * 
+ * */
+
+package IO流;
+
+public class FileReaderDemo1 {
+	public static void main(String[] args) {
+		
+
+	}
+
+}

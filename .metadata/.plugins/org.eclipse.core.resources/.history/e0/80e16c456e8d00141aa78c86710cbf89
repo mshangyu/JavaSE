@@ -1,0 +1,22 @@
+/*字符输出流操作步骤：
+ *    A 创建字符输出流对象
+ *    B 调用输出方法 并刷新缓冲区
+ *    C 释放资源
+ * 
+ * */
+
+package IO流;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriteDemo {
+	public static void main(String[] args) throws IOException {
+		//A 创建字符输出流对象
+		FileWriter fw=new FileWriter("fw2.txt");
+		
+		//B 调用输出方法 并刷新缓冲区
+		
+	}
+
+}
