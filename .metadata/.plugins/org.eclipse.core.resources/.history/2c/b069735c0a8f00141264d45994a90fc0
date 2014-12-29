@@ -1,0 +1,13 @@
+package byte_stream;
+
+import java.io.File;
+
+public class FileInputStreamDemo {
+	public static void main(String[] args) {
+		//1、创建文件对象
+		File file=new File("FileInputStreamDemo.java");
+		FileInputStream fis=new FileInputStream(file);
+
+	}
+
+}

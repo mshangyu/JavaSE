@@ -1,0 +1,42 @@
+
+package 编码概述;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class StudentDemo {
+	/*有五个学生，每个学生有三门课（语文，数学，英语）的成绩
+	 * 写一个程序接收从键盘输入学生的信息，输入格式为：name，30，30，30（姓名，三门课成绩）
+     *然后把输入的学生信息按总分从高到低的顺序 写入到一个名称为stu。txt文件中
+     *要求：stu.txt文件的格式要比较直观，打开这个文件，就可以很清楚的看到学生的信息；
+     *
+     *分析：1、五个学生，每个学生有三门课 
+     *告诉我们学生类的成员变量有：姓名，语文成绩 数学成绩 英语成绩
+     *2、然后把输入的学生信息按总分从高到低的顺序 说明有排序
+     *		TreeMap可以实现 总分做健 但是 如果总分相同 就会有问题
+     *考虑使用TreeSet存储学生即可
+     *3、遍历TreeSet集合，把数据写到文件
+     *		文件的数据格式：
+     *			姓名，语文成绩 数学成绩 英语成绩
+	 *
+	 */
+	public static void main(String[] args) {
+		//创建TreeSet集合
+		TreeSet<Student> ts=new TreeSet<Student>(new Comparator<Student>() {
+
+			@Override
+			public int compare(Student s1, Student s2) {  //1-2是从低到高  2-1是从高到低
+				int sum=s2.getSum()-s1.getSum();
+				int sum2=sum==0?s1.getChinese()-s2.getChinese():sum;
+				int sum3=sum2==0?s1.getEnglish()-s2.getEnglish():sum2;
+				int sum4=sum3==0?s1.getMath()-s2.getMath():sum3;
+				int sum5=sum4==0?s1.getName().compareTo(s2.getName()):sum4;
+				return 0;
+			}
+		});
+		
+
+	}
+
+}
+

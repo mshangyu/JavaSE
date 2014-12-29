@@ -1,0 +1,23 @@
+package char_stream;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReaderDemo {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		//文件输入流:文件必须存在 否则 ：异常
+		FileReader fr=new FileReader("google.txt");
+		int ch=0;
+		while ((ch=fr.read())!=-1) {
+			System.out.println((char)ch);
+		}
+
+	}
+
+}

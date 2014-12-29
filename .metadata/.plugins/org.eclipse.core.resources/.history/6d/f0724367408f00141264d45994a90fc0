@@ -1,0 +1,14 @@
+
+package 编码概述;
+
+public class IOEncodeDemo {
+/*
+ * IO流中的编码问题：
+ * 		我要在io流中读写数据的时候去制定编码，该怎么办呢？
+ * 		public OutputStreamWriter(OutputStream out,String charsetName)
+ *		 OutputStreamWriter=out+charsetName
+ * 		字符流=字节流+编码表
+ * 
+ * */
+
+}

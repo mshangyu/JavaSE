@@ -1,0 +1,15 @@
+package 编码概述;
+
+import java.util.Properties;
+
+public class PropertiesDemo3 {
+	public static void main(String[] args) {
+		//Properties prop=new Properties()
+		//System.out.prontln(prop);
+		
+		//public static Properties getProperties()
+		Properties prop=System.getProperties(); //获取系统属性
+
+	}
+
+}
