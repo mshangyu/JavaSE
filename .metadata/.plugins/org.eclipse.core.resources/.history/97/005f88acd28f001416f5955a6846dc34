@@ -1,0 +1,44 @@
+package redir_stdio;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.sql.PseudoColumnUsage;
+
+/*System.in  键盘        setIn(InputSteam) 
+ * System.out   屏幕  setOut(OutputSteam)
+ * System.err   屏幕setError(PrintSteam)
+ * */
+public class RedirStdio {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		PrintStream ps=null;
+		try {
+			ps=new PrintStream(new FileOutputStream("redir.txt"));
+			//system.out--->ps
+			System.out.println("重定向之前：打印到终端");
+			System.out.println(new Object());
+			
+			System.setOut(ps);
+			
+			System.out.println("重定向之后：打印到文件");
+			System.out.println(new Object());
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			ps.close();
+		}
+		
+		FileInputStream fis=new FileInputStream("redir.txt");
+		System.out.println(fis);
+		
+
+	}
+
+}

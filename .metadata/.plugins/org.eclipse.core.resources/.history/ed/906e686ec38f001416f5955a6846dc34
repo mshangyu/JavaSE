@@ -1,0 +1,13 @@
+package node_stream;
+
+public class StringNode {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -9,6 +9,9 @@ import IO基类下面的字符流.FileWriteDemo;
 /*
  * public void store(OutputStream out,String comments)
  * public void store(Writer writer,String comments)
+ * 
+ * load:加载进度
+ * store:保存进度
  * */
 public class PropertiesDemo5 {
 	public static void main(String[] args) throws IOException {

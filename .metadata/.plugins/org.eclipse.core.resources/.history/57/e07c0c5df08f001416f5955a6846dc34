@@ -1,0 +1,38 @@
+
+package serialize.obj;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+/*反序列化：                                                                                      节点流
+ * 1、ObjectInputStream  输入流对象：===处理流==基于FileInputStream
+ * 2、readObject()-----
+ * */
+public class ReadObject {
+	public static void main(String[] args) {
+		//外层是 处理流                                                                              里面的是节点流
+		ObjectInputStream ois;
+		try {
+			ois = new ObjectInputStream(new FileInputStream("obj.txt"));
+			Person p2;
+			try {
+				p2 = (Person)ois.readObject();
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}//new 构造函数
+			System.out.println("name:"+p2.getName()+"age:"+p2.getAge());
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

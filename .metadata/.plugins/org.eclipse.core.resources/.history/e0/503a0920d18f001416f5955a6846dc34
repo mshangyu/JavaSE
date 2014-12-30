@@ -1,0 +1,15 @@
+package redir_stdio;
+/*System.in  ¼üÅÌ
+ * System.out   ÆÁÄ»
+ * */
+public class RedirStdio {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+
+package serialize.obj;
+/*反序列化：                                                                                      节点流
+ * 1、ObjectInputStream  输入流对象：===处理流==基于FileInputStream
+ * 2、readObject()-----
+ * */
+public class ReadObject {
+	public static void main(String[] args) {
+		
+
+	}
+
+}
