@@ -1,0 +1,45 @@
+
+package 网络;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import IO基类下面的字符流.FileWriteDemo;
+
+public class ServerDemo {
+	public static void main(String[] args) throws IOException {
+		//创建服务器对象
+		ServerSocket ss=new ServerSocket(12345);
+		
+		//监听客户端连接
+		Socket s=ss.accept();
+		//获取socket对象的输入流  包装输入流
+		BufferedReader br=new BufferedReader(new InputStreamReader(s.getInputStream()));
+		
+		//读取数据 并显示在控制台，，把数据写入文件
+		BufferedWriter bw=new  BufferedWriter(new FileWriter("Copy1.java"));
+		String line=null;
+		while ((line=br.readLine())!=null) {
+			bw.write(line);
+			bw.newLine();
+			bw.flush();
+		}
+		//给客户端一个反馈
+		//把输出流进行包装一下
+		BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+		writer.write("文件上传成功");
+		writer.newLine();
+		writer.flush();
+		
+		//释放资源
+		bw.close();
+		s.close();
+		ss.close();
+	}
+}

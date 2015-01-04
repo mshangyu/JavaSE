@@ -1,0 +1,17 @@
+package ÍøÂç;
+
+import java.net.DatagramSocket;
+
+public class ReceiveThread implements Runnable {
+	private DatagramSocket ds;
+	public ReceiveThread(DatagramSocket ds){
+		this.ds=ds;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

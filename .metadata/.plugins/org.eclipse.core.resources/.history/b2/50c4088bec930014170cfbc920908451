@@ -1,0 +1,40 @@
+package 网络;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.Socket;
+
+public class ClientDemo {
+	public static void main(String[] args) throws IOException {
+		//创建客户端对象
+		Socket s=new Socket("192.168.32.80",12345);
+		//读取文件的数据
+		BufferedReader br=new  BufferedReader(new FileReader("InetAddressDemo.java"));
+		//把通道内的输出流包装
+		BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+		
+		String line=null;
+		while ((line=br.readLine())!=null) {
+			bw.write(line);
+			bw.newLine();
+			bw.flush();
+		}
+		
+		s.shutdownOutput();//禁用输出流
+		
+		//获取服务器的反馈
+		//把通道内的输入流包装
+		BufferedReader reader=new BufferedReader(new InputStreamReader(s.getInputStream()));
+		String data=reader.readLine();
+		System.out.println("client"+data);
+		
+		
+		//释放资源
+		br.close();
+		s.close();
+	}
+}

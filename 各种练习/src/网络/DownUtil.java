@@ -25,7 +25,7 @@ public class DownUtil {
 		this.targetFile = targetFile;
 		this.threadNum = threadNum;
 		// 初始化threads数组
-		threads = new DownThread(threadNum);
+	//	threads = new DownThread(threadNum);
 	}
 
 	public void download() throws Exception {
@@ -122,26 +122,6 @@ public class DownUtil {
 			}
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
 	}
+
 }

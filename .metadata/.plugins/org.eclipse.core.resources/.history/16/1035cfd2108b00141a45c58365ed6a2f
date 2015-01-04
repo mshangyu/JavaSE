@@ -1,9 +1,0 @@
-/*进程：是操作系统对应用程序资源分配、进程调度的最小单位[正在运行的程序]
- * 线程：是系统中执行任务的[最小单位]
- * */
-public class Demo {
-	public static void main(String[] args) {
-		
-	}
-
-}
