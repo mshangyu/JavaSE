@@ -1,14 +1,13 @@
 package action;
 
-import java.sql.SQLException;
-import java.util.List;
+import java.awt.List;
 
 import model.Goddess;
 import dao.GoddessDao;
 
 public class GoddessAction {
-	private void main() throws SQLException {
+	private void main() {
 		GoddessDao g=new GoddessDao();
-		List<Goddess> gs=g.query();
+		List gs=g.query();
 	}
 }
