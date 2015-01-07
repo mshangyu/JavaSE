@@ -1,0 +1,11 @@
+package action;
+
+import model.Goddess;
+import dao.GoddessDao;
+
+public class GoddessAction {
+	private void main() {
+		GoddessDao g=new GoddessDao();
+		g.query();
+	}
+}
