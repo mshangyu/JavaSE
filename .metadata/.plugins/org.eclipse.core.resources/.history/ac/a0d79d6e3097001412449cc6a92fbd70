@@ -1,0 +1,32 @@
+package cn.itcast.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public final class JdbcUtils {
+	private static String url="jdbc:mysql://127.0.0.1:3306/test";
+	private static String user="root";
+	private static String password="qwer";
+	
+	
+	private JdbcUtils(){
+	}
+	
+	
+	static{
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			throw new ExceptionInInitializerError(e);
+		}
+	}
+
+
+	public static Connection getConnection() throws SQLException {
+		
+		return DriverManager.getConnection(url,user,password);;
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+package action;
+//≤‚ ‘
+import java.util.Date;
+import java.util.List;
+
+import model.Goddess;
+import dao.GoddessDao;
+
+public class GoddessAction {
+	private void main() throws Exception {
+		GoddessDao g=new GoddessDao();
+		List<Goddess> gs=g.query();
+		
+		for (Goddess goddess : gs) {
+			System.out.println(goddess.getUser_name()+","+goddess.getAge());
+		}
+		
+		
+		
+		
+	}
+}

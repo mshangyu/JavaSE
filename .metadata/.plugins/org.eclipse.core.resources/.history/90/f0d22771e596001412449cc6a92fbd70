@@ -1,0 +1,33 @@
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class demo {
+	public static void main(String[] args) throws ClassNotFoundException {
+		String sql="SELECT * FROM tdb_goods";
+		String in_sql="INSERT tdb_goods (goods_name,goods_cate,brand_name,goods_price,is_show,is_saleoff) VALUES('高博','笔记本配件','索尼','99',DEFAULT,DEFAULT);";
+		//1、加载驱动
+		Class.forName("com.mysql.jdbc.Driver");
+		//2、获得连接
+		try {
+			Connection conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","root","qwer");
+			//
+			java.sql.Statement stmt= conn.createStatement();
+			ResultSet rs=stmt.executeQuery(sql);
+			
+			while (rs.next()) {
+				System.out.println(rs.getInt(1)+"\t"+
+								   rs.getString(1)+"\t"+
+								   rs.getString(2)+"\t"+
+								   rs.getString(5));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

@@ -1,0 +1,36 @@
+package action;
+//测试
+import java.util.Date;
+import java.util.List;
+
+import com.mysql.fabric.xmlrpc.base.Data;
+
+import model.Goddess;
+import dao.GoddessDao;
+
+public class GoddessAction {
+	private void main() throws Exception {
+//		//这里测试的前面查询的方法
+//		GoddessDao g=new GoddessDao();
+//		List<Goddess> gs=g.query();
+//		for (Goddess goddess : gs) {
+//			System.out.println(goddess.getUser_name()+","+goddess.getAge());
+//		}
+//		
+		
+		//这里测试的是前面新增加的方法
+		GoddessDao g=new GoddessDao();
+		Goddess g1=new Goddess();
+		g1.setUser_name("周杰伦");
+		g1.setAge(22);
+		g1.setSex(1);
+		g1.setBrithday();
+		g1.setEmail("zhoujielun@imooc.com");
+		g1.setMobile("18766888866");
+		g1.setCreate_user("liutao");
+		g1.setUpdate_user("liutao");
+		g1.setId(1);
+		
+		g.addGoddess(g1);
+	}
+}
