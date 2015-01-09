@@ -1,0 +1,35 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+
+public class LoginFrame {
+	private final String PROP_FILE="my.ini";
+	private String driver;
+	//url是数据库的服务地址
+	private String url;
+	private String user;
+	private String pas;
+	//登陆界面的GUI组件
+	private JFrame jf=new JFrame("登陆");
+	private JTextField userField=new JTextField(20);
+	private JTextField passField=new JTextField(20);
+	private JButton loginButton = new JButton("登陆");
+	
+	public void init() throws Exception {
+		Properties connProp =new Properties();
+		connProp.load(new FileInputStream(PROP_FILE));
+		driver = connProp.getProperty("url");
+		url=connProp.getProperty("user");
+		user=connProp.getProperty("pass");
+		//加载驱动
+		Class.forName(driver);
+		//为登陆按钮添加
+	}
+	
+}

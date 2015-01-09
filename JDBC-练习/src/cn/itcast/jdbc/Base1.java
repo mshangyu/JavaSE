@@ -23,6 +23,7 @@ public class Base1 {
 			
 			// 2、建立连接
 			conn = JdbcUtils.getConnection();
+			//conn=JdbcUtilsSing.getInstance().getConnection();
 			// 3、创建语句
 			 st = conn.createStatement();
 
