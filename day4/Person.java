@@ -4,8 +4,8 @@
 
 public class Person{
     //定义成员变量 （静态属性）：系统会默认初始化 取决于成员的类型 
-	String name;
-	int    age;
+	String name;//引用数据类型
+	int    age;//基本数据类型
 	
 	
 	//定义成员方法  (动态变量)

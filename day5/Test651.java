@@ -1,4 +1,4 @@
-形状：  圆a          长方形b      三角形c
+/*形状：  圆a          长方形b      三角形c
 shape  qiumian1(){}  qiumian2(){} qiumian3(){}
 
 									 shape  sh=new A();
@@ -15,4 +15,4 @@ qiumian(shape sh){
 	
 	}else if(sh instanceof C){
 	
-	}
+	}*/

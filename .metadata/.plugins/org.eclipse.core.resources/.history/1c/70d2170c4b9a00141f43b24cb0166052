@@ -24,6 +24,6 @@ public class Java8键盘控制数的相加 {
 		}
 
 		System.out.println("结果是："+s);
-	}   
+	}
 
 }

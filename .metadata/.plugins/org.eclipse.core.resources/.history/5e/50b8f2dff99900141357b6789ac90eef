@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class demo {
 	public static void main(String[] args) throws ClassNotFoundException {
 		String sql = "SELECT * FROM tdb_goods";
-		String in_sql = "INSERT tdb_goods (goods_id,goods_name,cate_id,brand_id,goods_price,is_show,is_saleoff) VALUES(998,'高博',45,44,'99',DEFAULT,DEFAULT);";
-		//String del_sql = "DELETE FROM tdb_goods WHERE goods_id=5";
-		String alt_sql="ALTER TABLE tdb_goods  CHANGE is_saleoff is_saleoffs TINYINT ";
+		String in_sql = "INSERT tdb_goods (goods_id,goods_name,cate_id,brand_id,goods_price,is_show,is_saleoff) VALUES(28,'高博',45,44,'99',DEFAULT,DEFAULT);";
+		String del_sql = "DELETE FROM tdb_goods WHERE goods_id=28";
+		String alt_sql="ALTER TABLE CHANGE is_show is_shows TINYINT DEFAULT";
 		// 1、加载驱动
 		Class.forName("com.mysql.jdbc.Driver");
 		// 2、获得连接
@@ -36,12 +36,11 @@ public class demo {
 			}
 			
 			// 删除
-		//	boolean num2 = stmt.execute(del_sql);
-		//	System.out.println(num2);
+			boolean num2 = stmt.execute(del_sql);
+			System.out.println(num2);
 			
 			//修改
-			int i = stmt.executeUpdate(alt_sql);
-			System.out.println(i);
+			int num = stmt.executeUpdate(alt_sql);
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
