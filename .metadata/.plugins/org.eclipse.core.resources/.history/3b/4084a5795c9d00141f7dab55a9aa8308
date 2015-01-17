@@ -11,11 +11,11 @@ public class java14第几天 {
 		System.out.println("请输入年份：");
 		int year = s.nextInt();
 		System.out.println("请输入月份：");
-		int month = s.nextInt()-1;
+		int month = s.nextInt();
 		System.out.println("请输入几号：");
 		int day = s.nextInt();
 
-		int d=day;
+		int days= 0;
 		int sum=0;
 
 		if (year < 0 || month < 0 || month > 12 || day < 0 || day > 31) {
@@ -50,10 +50,10 @@ public class java14第几天 {
 				}
 				break;
 			}
-			sum=sum+day;
 			
+			sum=sum+days;
+			System.out.println(sum);
 		}
-		d=d+sum;
-		System.out.println(d);
+		
 	}
 }

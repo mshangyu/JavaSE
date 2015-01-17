@@ -58,6 +58,6 @@
 <fullyQualifiedTypeName name="java.sql.Types"/>
 <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
 <fullyQualifiedTypeName name="CallableStatementTest"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
