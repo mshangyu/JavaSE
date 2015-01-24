@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;java50道练习题.java20.java&apos; to &apos;java20taozi.java&apos;&#x0D;&#x0A;- Original project: &apos;各种练习&apos;&#x0D;&#x0A;- Original element: &apos;java50道练习题.java20.java&apos;&#x0D;&#x0A;- Renamed element: &apos;java50道练习题.java20taozi.java&apos;" description="Rename compilation unit &apos;java20.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;java50道练习题{java20.java" name="java20taozi.java" references="false" stamp="1422090875901" version="1.0"/>
+</session>
