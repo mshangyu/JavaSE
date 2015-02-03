@@ -16,7 +16,7 @@ public class java27qiusushu {
 					break;
 				}
 			}
-			if (b) {
+			if (b=true) {
 				System.out.println(i);
 			}
 			
