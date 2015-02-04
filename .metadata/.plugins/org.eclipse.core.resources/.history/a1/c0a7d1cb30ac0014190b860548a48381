@@ -1,0 +1,13 @@
+package java50道练习题;
+
+public class java32shuchu7wei {
+	/**
+	 * 【程序32】   
+	 * 题目：取一个整数a从右端开始的4～7位。   
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
