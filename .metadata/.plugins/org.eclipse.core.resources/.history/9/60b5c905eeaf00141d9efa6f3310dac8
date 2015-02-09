@@ -1,0 +1,11 @@
+package java50道练习题;
+
+public class java29duijiaoxian {
+
+	//题目：求一个3*3矩阵对角线元素之和 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
