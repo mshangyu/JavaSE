@@ -42,8 +42,6 @@ public class java30charushuzu {
 				break;
 				}
 		}
-		
-		 
 		for(int bb:b){System.out.print(bb+" ");}
 		}
 	}
