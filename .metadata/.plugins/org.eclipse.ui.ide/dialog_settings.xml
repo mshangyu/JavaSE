@@ -14,6 +14,8 @@
 		<item value="org.eclipse.rcp:4.2.2.v20130129-152330-7IARAABrMQkGSvMgQnUlz-DQz00h"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 	</section>
 	<section name="SaveAsDialogSettings">
 		<item value="525" key="DIALOG_WIDTH"/>

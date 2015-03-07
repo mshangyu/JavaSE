@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 定义第一个表格布局，指定第二列允许收缩，第三列允许拉伸 -->
+<TableLayout 
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:stretchColumns="2"
+    ></TableLayout>
+<!-- 定义第二个表格布局，指定第二列隐藏-->
+<TableLayout 
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:collapseColumns="1"
+    ></TableLayout>
+<!-- 定义第三个表格布局，指定第二列和第三列可以被拉伸 -->
+<TableLayout 
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2"
+    ></TableLayout>
+
+</LinearLayout>

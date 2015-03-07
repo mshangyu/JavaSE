@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android2015</string>
+    <string name="ok">你好!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bn1">测试按钮一</string>
+    <string name="bn2">测试按钮二</string>
+    <string name="bn3">测试按钮三</string>
+    <string name="bn4">测试按钮四</string>
+    <string name="bn5">测试按钮五</string>
+
+</resources>

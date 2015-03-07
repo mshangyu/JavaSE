@@ -1,0 +1,11 @@
+package com.example.android2015;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class CustomView extends Activity{
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate
+	}
+	
+}

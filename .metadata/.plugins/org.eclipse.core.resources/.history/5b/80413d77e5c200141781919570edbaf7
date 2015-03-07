@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 依次定义7个TextView,先定义的TextView位于底层 后定义的TextView位于上层 -->
+
+    <TextView
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff0000"
+        android:height="320px"
+        android:width="320px" />
+
+    <TextView
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff0000"
+        android:height="280px"
+        android:width="280px" />
+
+    <TextView
+        android:id="@+id/View03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00f"
+        android:height="240px"
+        android:width="240px" />
+
+    <TextView
+        android:id="@+id/View04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff0"
+        android:height="200px"
+        android:width="200px" />
+
+    <TextView
+        android:id="@+id/View05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f0f"
+        android:height="160px"
+        android:width="160px" />
+
+    <TextView
+        android:id="@+id/View06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#0ff"
+        android:height="120px"
+        android:width="120px" />
+
+</LinearLayout>

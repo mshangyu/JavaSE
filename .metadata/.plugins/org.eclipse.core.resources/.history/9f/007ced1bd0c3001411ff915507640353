@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gem.android2015"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gem.android2015.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.OtherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.LinearLayoutActivity"
+            android:label="@string/title_activity_linear" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.CalculatorActivity"
+            android:label="@string/title_activity_calculator" >
+        </activity>
+        <activity
+            android:name="com.gem.android2015.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

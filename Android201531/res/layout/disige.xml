@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- 定义该组件位于父容器中间 -->
+<TextView 
+    android:id="@+id/view01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaf"
+    android:layout_centerInParent="true"
+    />
+<!-- 定义该组件位于view01组件的上方 -->
+<TextView 
+    android:id="@+id/View02"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaf"
+    android:layout_above="@id/view01"
+    android:layout_alignLeft="@id/view01"
+    />
+<!-- 定义该组件位于view01组件的下方 -->
+<TextView 
+    android:id="@+id/View03"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaf"
+    android:layout_below="@id/view01"
+    android:layout_alignLeft="@id/view01"
+    />
+<!-- 定义该组件位于view01组件的左方 -->
+<TextView 
+    android:id="@+id/View04"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaf"
+    android:layout_toLeftOf="@id/view01"
+    android:layout_alignTop="@id/view01"
+    />
+<!-- 定义该组件位于view01组件的右方 -->
+<TextView 
+    android:id="@+id/View05"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leaf"
+    android:layout_toRightOf="@id/view01"
+    android:layout_alignTop="@id/view01"
+    />
+</RelativeLayout>
