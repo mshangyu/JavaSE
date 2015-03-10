@@ -12,5 +12,10 @@
     <string name="title_activity_image_view">ImageView</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_quick_contact_badge_test">QuickContactBadgeTest</string>
+    <string name="title_activity_array_adapter_test">ArrayAdapterTest</string>
+    <string name="title_activity_base_adapter_test">BaseAdapterTest</string>
+    <string name="title_activity_auto_complete_text_test">AutoCompleteTextTest</string>
+    <string name="title_activity_grid_view_test">GridViewTest</string>
+    <string name="title_activity_progress_bar_test">ProgressBarTest</string>
 
 </resources>

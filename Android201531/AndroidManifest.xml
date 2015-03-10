@@ -24,6 +24,18 @@
         <activity
             android:name=".CustomView"
             android:label="@string/title_activity_image_view" >
+        </activity>
+        <activity
+            android:name=".ArrayAdapterTest"
+            android:label="@string/title_activity_array_adapter_test" >
+        </activity>
+        <activity
+            android:name=".BaseAdapterTest"
+            android:label="@string/title_activity_base_adapter_test" >
+        </activity>
+        <activity
+            android:name=".AutoCompleteTextTest"
+            android:label="@string/title_activity_auto_complete_text_test" >
 
             <!-- 这里就是你要运行的java的文件的名字 -->
             <intent-filter>
@@ -31,6 +43,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridViewTest"
+            android:label="@string/title_activity_grid_view_test" >
+        </activity>
+        <activity
+            android:name=".ProgressBarTest"
+            android:label="@string/title_activity_progress_bar_test" >
         </activity>
     </application>
 
