@@ -1,0 +1,98 @@
+package com.test.vo;
+
+public class MedicineList {
+	private int id;
+	private String drugName;
+	private String illName;
+	private String adapte;
+	private String price;
+	private String directions;
+	private String state;
+	private String reaction;
+	private String photo;
+	private String drugCate;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDrugName() {
+		return drugName;
+	}
+	public void setDrugName(String drugName) {
+		this.drugName = drugName;
+	}
+	public String getIllName() {
+		return illName;
+	}
+	public void setIllName(String illName) {
+		this.illName = illName;
+	}
+	public String getAdapte() {
+		return adapte;
+	}
+	public void setAdapte(String adapte) {
+		this.adapte = adapte;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getDirections() {
+		return directions;
+	}
+	public void setDirections(String directions) {
+		this.directions = directions;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getReaction() {
+		return reaction;
+	}
+	public void setReaction(String reaction) {
+		this.reaction = reaction;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	public String getDrugCate() {
+		return drugCate;
+	}
+	public void setDrugCate(String drugCate) {
+		this.drugCate = drugCate;
+	}
+	public MedicineList(int id, String drugName, String illName, String adapte,
+			String price, String directions, String state, String reaction,
+			String photo, String drugCate) {
+		super();
+		this.id = id;
+		this.drugName = drugName;
+		this.illName = illName;
+		this.adapte = adapte;
+		this.price = price;
+		this.directions = directions;
+		this.state = state;
+		this.reaction = reaction;
+		this.photo = photo;
+		this.drugCate = drugCate;
+	}
+	@Override
+	public String toString() {
+		return "MedicineList [id=" + id + ", drugName=" + drugName
+				+ ", illName=" + illName + ", adapte=" + adapte + ", price="
+				+ price + ", directions=" + directions + ", state=" + state
+				+ ", reaction=" + reaction + ", photo=" + photo + ", drugCate="
+				+ drugCate + "]";
+	}
+	public MedicineList(){}
+}

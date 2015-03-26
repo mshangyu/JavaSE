@@ -36,8 +36,32 @@
         <activity
             android:name=".AutoCompleteTextTest"
             android:label="@string/title_activity_auto_complete_text_test" >
+        </activity>
+        <activity
+            android:name=".ProgressBarTest"
+            android:label="@string/title_activity_progress_bar_test" >
+        </activity>
+        <activity
+            android:name=".TitleProgressBar"
+            android:label="@string/title_activity_title_progress_bar" >
+        </activity>
+        <activity
+            android:name=".DialogTheme"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+
+            <!-- 对话框风格进行显示 -->
+
 
             <!-- 这里就是你要运行的java的文件的名字 -->
+        </activity>
+        <activity
+            android:name=".HandleTest"
+            android:label="@string/title_activity_seek_bar_test" >
+        </activity>
+        <activity
+            android:name=".ActionItemTest"
+            android:label="@string/title_activity_action_item_test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,12 +69,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".OtherActivity"
+            android:label="@string/other_activity" />
+        <activity
             android:name=".GridViewTest"
             android:label="@string/title_activity_grid_view_test" >
-        </activity>
-        <activity
-            android:name=".ProgressBarTest"
-            android:label="@string/title_activity_progress_bar_test" >
         </activity>
     </application>
 

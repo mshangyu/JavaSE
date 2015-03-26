@@ -1,0 +1,9 @@
+package com.example.android_viewpager;
+
+import android.support.v4.app.Fragment;  //导这个包的原因是兼容更低的版本
+
+public class Fragment1 extends Fragment {
+
+
+
+}

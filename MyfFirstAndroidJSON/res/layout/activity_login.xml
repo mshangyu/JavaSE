@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myffirstandroidjson.LoginActivity" 
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_password"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/denglu"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_userName"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_password"
+        android:layout_centerVertical="true"
+        android:text="记住密码" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="45dp"
+        android:text="密    码：" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_password"
+        android:layout_alignLeft="@+id/tv_password"
+        android:layout_marginBottom="26dp"
+        android:text="用户名：" />
+
+    <Button
+        android:id="@+id/zhuce"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/denglu"
+        android:layout_alignLeft="@+id/wangji"
+        android:layout_marginTop="42dp"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/denglu"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignRight="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="42dp"
+        android:text="登陆" />
+
+    <TextView
+        android:id="@+id/wangji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_marginLeft="51dp"
+        android:text="忘记密码 ?" />
+
+</RelativeLayout>

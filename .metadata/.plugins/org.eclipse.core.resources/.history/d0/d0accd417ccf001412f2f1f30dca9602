@@ -1,0 +1,199 @@
+package com.test.jsonpicture;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.Header;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.example.jsonpicture.R;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.test.service.impl.MedicineListServiceImpl;
+import com.test.util.DownTuUtils;
+import com.test.util.URLUtil;
+import com.test.vo.MedicineList;
+
+public class MainActivity extends Activity {
+
+	ListView listView;
+	List<MedicineList> lists;
+
+	private AsyncHttpClient client;
+	private RequestParams params;
+
+	MyListAdapter adapter;
+
+	Handler handler = new Handler() {
+
+		@Override
+		public void handleMessage(Message msg) {
+			if (msg.what == 0x123) {
+				adapter = new MyListAdapter();
+				listView.setAdapter(adapter);
+
+			}
+		}
+
+	};
+
+	private class MyListAdapter extends BaseAdapter {
+
+		class ListItemView {
+			public ImageView image;
+			public TextView tv1;
+			public TextView tv2;
+			public TextView tv3;
+		}
+
+		@Override
+		public int getCount() {
+			return lists.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+
+			return lists.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return 0;
+		}
+
+		@Override
+		public View getView(final int position, View convertView,
+				ViewGroup parent) {
+			// final int selectID = position;
+			// 自定义视图
+			ListItemView listItemView = null;
+			if (convertView == null) {
+				listItemView = new ListItemView();
+				// 获取list_item布局文件的视图
+				convertView = LayoutInflater.from(getApplicationContext())
+						.inflate(R.layout.item, null);
+				// 获取控件对象
+				listItemView.image = (ImageView) convertView
+						.findViewById(R.id.Img);
+				listItemView.tv1 = (TextView) convertView
+						.findViewById(R.id.tv1);
+				listItemView.tv2 = (TextView) convertView
+						.findViewById(R.id.tv2);
+				listItemView.tv3 = (TextView) convertView
+						.findViewById(R.id.tv3);
+
+				// 设置控件集到convertView
+				convertView.setTag(listItemView);
+			} else {
+				listItemView = (ListItemView) convertView.getTag();
+			}
+
+			// 设置文字和图片
+			// listItemView.image.setImageDrawable(getResources().getDrawable(R.drawable.advertising_default_1));
+			// listItemView.image.setImageBitmap(new
+			// BitmapFactory().decodeByteArray(data, offset, length))
+
+			ImageLoader imageLoader = ImageLoader.getInstance();
+			imageLoader.init(DownTuUtils.getConfig(MainActivity.this));
+			imageLoader.displayImage(lists.get(position).getPhoto(),//获得图片地址
+					listItemView.image, DownTuUtils.getOptions2());//ImageView组件
+			// listItemView.image.setImageResource(R.drawable.advertising_default_1);
+			listItemView.tv1.setText(lists.get(position).getDrugName());
+			listItemView.tv2.setText(lists.get(position).getIllName());
+			listItemView.tv3.setText(lists.get(position).getReaction());
+			return convertView;
+		}
+	}
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		//
+		// new Thread(){
+		// public void run() {
+		// lists = new MedicineListServiceImpl().getAllMedicineList();
+		// handler.sendEmptyMessage(0x123);
+		// };
+		// }.start();
+		// =======================
+
+		client = new AsyncHttpClient();
+		params = new RequestParams();
+		listView = (ListView) findViewById(R.id.listview);
+		
+//2		params.remove("type");
+		params.put("type", "json");
+//		params.put("type", "xml");
+		client.post(URLUtil.MY_URL + "MediniceListServlet", params,
+				new JsonHttpResponseHandler() {
+
+					@Override
+					public void onFailure(int statusCode, Header[] headers,
+							Throwable throwable, JSONArray Response) {
+						
+
+					}
+
+					@Override
+					public void onSuccess(int statusCode, Header[] headers,
+							JSONArray response) {
+						
+						
+						lists = new ArrayList<MedicineList>();
+						for (int i = 0; i < response.length(); i++) {
+
+							JSONObject jsonObject = null;
+							try {
+								jsonObject = response.getJSONObject(i);
+
+								MedicineList medicineList;
+
+								medicineList = new MedicineList(
+										jsonObject.getInt("id"),
+										jsonObject.getString("drugName"),
+										jsonObject.getString("illName"),
+										jsonObject.getString("adapte"),
+										jsonObject.getString("price"),
+										jsonObject.getString("directions"),
+										jsonObject.getString("state"),
+										jsonObject.getString("reaction"),
+										URLUtil.PICTURE_URL
+												+ jsonObject.getString("photo"),
+										jsonObject.getString("drugCate"));
+								lists.add(medicineList);
+
+							} catch (Exception e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+
+						}
+
+						adapter = new MyListAdapter();
+						listView.setAdapter(adapter);
+						
+					}
+
+				});
+
+	}
+
+}

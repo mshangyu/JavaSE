@@ -1,0 +1,127 @@
+package com.example.android_viewpager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends FragmentActivity {
+//将view1 2 3 4 转成view对象
+	
+	private List<View> viewlist;
+	private ViewPager pager;
+	//现在已经出现了第一个第二个。，。滑动的页面 但是每个页面可以有标题什么的 现在就来设置
+	private PagerTabStrip tab;
+	private List<String> titleList;  //这个集合用来存放标题 所有的标题都存放在这个集合里面
+	private List<Fragment> fraglist;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		viewlist=new ArrayList<View>();
+		
+		//第一种方法
+		//通过view对象去作为viewPager的数据源
+		View view1 =View.inflate(this, R.layout.view1, null);
+		View view2 =View.inflate(this, R.layout.view2, null);
+		View view3 =View.inflate(this, R.layout.view3, null);
+		View view4 =View.inflate(this, R.layout.view4, null);
+		
+		//现在把它们放到数据源的集合里面
+		viewlist.add(view1);
+		viewlist.add(view2);
+		viewlist.add(view3);
+		viewlist.add(view4);
+		
+		/*
+		 * 第二种方法 
+		 * 通过Fragment作为ViewPager的数据源
+		 * */
+		fraglist=new ArrayList<Fragment>();
+		fraglist.add(new Fragment1());
+		fraglist.add(new Fragment2());
+		fraglist.add(new Fragment3());
+		fraglist.add(new Fragment4());
+		//当这些写好之后 就可以写数据适配器了 MyFragmentPagerAdapter
+		
+		
+		
+		
+		
+		
+		//为VIEWPAGER 页卡设置标题
+		titleList=new ArrayList<String>();
+		titleList.add("第一页");
+		titleList.add("第二页");
+		titleList.add("第三页");
+		titleList.add("第四页");
+		
+		//在这里可以为pagertabstrip设置一些属性
+		//首先对tab进行初始化
+		tab=(PagerTabStrip) findViewById(R.id.tab);
+		tab.setBackgroundColor(Color.YELLOW);
+		tab.setTextColor(Color.RED);
+		//这句话是去掉下面的线
+		tab.setDrawFullUnderline(false);
+		//这句话是设置下面小粗线的颜色
+		tab.setTabIndicatorColor(Color.GREEN);
+		
+		
+//		//初始化ViewPager
+		pager=(ViewPager) findViewById(R.id.pager);
+		
+		//创建pageradapter的适配器
+		//MyPagerAdapter adapter =new MyPagerAdapter(viewlist);
+		
+		//现在将titlelist添加到构造方法中来
+		MyPagerAdapter adapter =new MyPagerAdapter(viewlist,titleList);
+		
+		//viewpager加载适配器
+		pager.setAdapter(adapter);
+		
+		
+		//当把MyFragmentPagerAdapter.java写好了之后 就可以过来些初始化适配器等等了
+//		//初始化适配器
+		MyFragmentPagerAdapter adapter=new MyFragmentPagerAdapter(get, fragList, titlelist)
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MyListViewLoad/res/layout/item_layout.xml&apos; to &apos;item_load.xml&apos;" description="Rename resource &apos;item_layout.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/item_layout.xml" name="item_load.xml" stamp="1426763613765" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MyListViewLoad/res/layout/item_load.xml&apos; to &apos;item_layout.xml&apos;" description="Rename resource &apos;item_load.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/item_load.xml" name="item_layout.xml" stamp="1426763672624" updateReferences="true"/>
+</session>

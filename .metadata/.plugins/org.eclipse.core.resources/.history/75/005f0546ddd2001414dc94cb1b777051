@@ -1,0 +1,63 @@
+package com.example.android_viewpager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends ActionBarActivity {
+//将view1 2 3 4 转成view对象
+	
+	private List<View> viewlist;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		viewlist=new ArrayList<View>();
+		
+		//通过view对象去作为viewPager的数据源
+		View view1 =View.inflate(this, R.layout.view1, null);
+		View view2 =View.inflate(this, R.layout.view2, null);
+		View view3 =View.inflate(this, R.layout.view3, null);
+		View view4 =View.inflate(this, R.layout.view4, null);
+		
+		//现在把它们放到数据源的集合里面
+		viewlist.add(view1);
+		viewlist.add(view2);
+		viewlist.add(view3);
+		viewlist.add(view4);
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

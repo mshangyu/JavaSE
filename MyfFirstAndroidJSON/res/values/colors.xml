@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textcolor">#696969</color>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="global_bg">#ebebeb</color>
+    <color name="transparent">#dfe5dd</color>
+    <color name="shenblue">#a7a7a7</color>
+    <color name="blue">#128cae</color>
+    <color name="gray">#6a6a6a</color>
+    <color name="danblue">#64c2dc</color>
+    <color name="dangray">#ececec</color>
+    <color name="shengray">#c7c7c7</color>
+      <color name="setting_bg">#fff2f2f2</color>
+        <color name="black">#ff000000</color>
+         <color name="white">#ffffffff</color>
+         <color name="deal_list_title_divider">#ff9e9e9e</color>
+           <color name="deal_detail_title_color">#ff303030</color>
+    
+	<color name="login_person">#363636</color>
+    
+    <color name="category_item_bg">#7F009900</color>
+    <color name="person_item_pressed">#64c2dc</color>
+    <color name="more_item_pressed">#6a6a6a</color>
+    <color name="bottom_item_selected">#007dfe</color>
+    <color name="actionbar_list_bg">#9000</color>
+    
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="trans">#50000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="text_gray">#4F4F4F</color>
+    <color name="grey21">#363636</color>
+    <color name="gold">#b89766</color>
+    
+    
+</resources>

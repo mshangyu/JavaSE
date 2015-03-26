@@ -1,0 +1,6 @@
+package com.test.util;
+
+public class URLUtil {
+	public static String MY_URL="http://10.205.1.12:8080/MyJson_Web/";
+	public static String PICTURE_URL = "http://10.205.1.12:8080/mhcn/photo/";
+}

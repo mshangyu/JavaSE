@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.crazyit.ui&apos; to &apos;org.gem.ui&apos;&#x0D;&#x0A;- Original project: &apos;ViewSwitcherTest&apos;&#x0D;&#x0A;- Original element: &apos;ViewSwitcherTest/src/org.crazyit.ui&apos;&#x0D;&#x0A;- Renamed element: &apos;ViewSwitcherTest/src/org.gem.ui&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.crazyit.ui&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;org.crazyit.ui" name="org.gem.ui" qualified="false" references="true" stamp="1425989307508" textual="false" version="1.0"/>
+</session>

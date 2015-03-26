@@ -1,0 +1,33 @@
+package com.example.android_viewpager;
+
+import android.support.v4.view.PagerAdapter;
+import android.view.View;
+
+public class MyPagerAdapter extends PagerAdapter {
+
+	//返回的是也卡的数量
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	//判断当前view是否来自于对象
+	@Override
+	public boolean isViewFromObject(View arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		return arg0==arg1;
+	}
+	
+	//下面两个方法是没有写全的 那么也要补上
+	@Override
+	public Object instantiateItem(View container, int position) {
+		// TODO Auto-generated method stub
+		return super.instantiateItem(container, position);
+	}
+	@Override
+	public void destroyItem(View container, int position, Object object) {
+		// TODO Auto-generated method stub
+		super.destroyItem(container, position, object);
+	}
+}

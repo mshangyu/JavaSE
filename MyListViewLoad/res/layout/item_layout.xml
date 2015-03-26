@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/app_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/item3_apkiv"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/yao" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item3_apkname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健儿乐颗粒"
+                android:textColor="@color/black"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/item3_apkinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="苏州市星湖街荣域商业街865商铺"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/item3_dlbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/dlbtn_selector"
+            android:text="详情" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item3_apkdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:text="清热化痰这可定喘，适用于小儿肺胃痰热，感受风寒引起的头痛身热，咳嗽痰盛，气促喘急，烦躁不安"
+        android:textSize="12dip" />
+
+</LinearLayout>

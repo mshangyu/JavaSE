@@ -1,0 +1,99 @@
+package com.test.util;
+
+import android.app.Activity;
+
+
+
+public class DownTuUtils {
+	
+	public static ImageLoaderConfiguration getConfig( Activity activity) {
+		return new ImageLoaderConfiguration.Builder(activity)
+		
+		.memoryCacheExtraOptions(640, 480)
+		
+		// 娣囨繂鐡ㄥВ蹇庨嚋缂傛挸鐡ㄩ崶鍓у閻ㄥ嫭娓舵径褔鏆遍崪灞筋啍
+		
+		.threadPoolSize(8)
+		
+		// 缁捐法鈻煎Ч鐘垫畱婢堆冪毈 鏉╂瑤閲滈崗璺虹杽姒涙顓荤亸杈ㄦЦ3
+		
+		.memoryCacheSize(2 * 1024)
+		
+		// 鐠佸墽鐤嗙紓鎾崇摠閻ㄥ嫭娓舵径褍鐡ч懞锟�		
+		.denyCacheImageMultipleSizesInMemory()
+		
+		// 缂傛挸鐡ㄩ弰鍓с仛娑撳秴鎮撴径褍鐨惃鍕倱娑擄拷绱堕崶鍓у
+		
+		.imageDownloader(
+		
+		new BaseImageDownloader(activity, 5 * 1000, 30 * 1000)) // connectTimeout
+		
+		// s)鐡掑懏妞傞弮鍫曟？
+		
+		.build();
+	}
+	
+	
+	public static DisplayImageOptions getOptions() {
+		DisplayImageOptions options;
+		
+		options = new DisplayImageOptions.Builder()
+		
+		.showImageOnLoading(R.drawable.a) // 璁剧疆鍥剧墖鍦ㄤ笅杞芥湡闂存樉绀虹殑鍥剧墖
+		
+		.showImageForEmptyUri(R.drawable.b)//璁剧疆鍥剧墖Uri涓虹┖鎴栨槸閿欒鐨勬椂鍊欐樉绀虹殑鍥剧墖
+		
+		.showImageOnFail(R.drawable.c) //璁剧疆鍥剧墖鍔犺浇/瑙ｇ爜杩囩▼涓敊璇椂鍊欐樉绀虹殑鍥剧墖
+		
+		.cacheInMemory(true)// 璁剧疆涓嬭浇鐨勫浘鐗囨槸鍚︾紦瀛樺湪鍐呭瓨涓�		
+		.cacheOnDisk(true)// 鐠佽缃笅杞界殑鍥剧墖鏄惁缂撳瓨鍦⊿D鍗′腑
+		
+		.displayer(new FadeInBitmapDisplayer(1))// 鏄惁鍥剧墖鍔犺浇濂藉悗娓愬叆鐨勫姩鐢绘椂闂�		
+		.build();
+		
+		return options;
+	}
+	
+	public static DisplayImageOptions getOptions2() {
+		DisplayImageOptions options;
+		
+		options = new DisplayImageOptions.Builder()
+		
+		.showImageOnLoading(R.drawable.a) // 璁剧疆鍥剧墖鍦ㄤ笅杞芥湡闂存樉绀虹殑鍥剧墖
+		
+		.showImageForEmptyUri(R.drawable.e)// 璁剧疆鍥剧墖Uri涓虹┖鎴栨槸閿欒鐨勬椂鍊欐樉绀虹殑鍥剧墖
+		
+		.showImageOnFail(R.drawable.f) // 璁剧疆鍥剧墖鍔犺浇/瑙ｇ爜杩囩▼涓敊璇椂鍊欐樉绀虹殑鍥剧墖
+		
+		.cacheInMemory(true)// 璁剧疆涓嬭浇鐨勫浘鐗囨槸鍚︾紦瀛樺湪鍐呭瓨涓�		
+		.cacheOnDisk(true)// 璁剧疆涓嬭浇鐨勫浘鐗囨槸鍚︾紦瀛樺湪SD鍗′腑
+		
+		.displayer(new FadeInBitmapDisplayer(10))// 鏄惁鍥剧墖鍔犺浇濂藉悗娓愬叆鐨勫姩鐢绘椂闂�		.displayer(new RoundedBitmapDisplayer(100))
+		
+		.build();
+		
+		return options;
+	}
+	
+	public static DisplayImageOptions getOptions3() {
+		DisplayImageOptions options;
+		
+		options = new DisplayImageOptions.Builder()
+		
+		.showImageOnLoading(R.drawable.d) // 璁剧疆鍥剧墖鍦ㄤ笅杞芥湡闂存樉绀虹殑鍥剧墖
+		
+		.showImageForEmptyUri(R.drawable.e)// 璁剧疆鍥剧墖Uri涓虹┖鎴栨槸閿欒鐨勬椂鍊欐樉绀虹殑鍥剧墖
+		
+		.showImageOnFail(R.drawable.f) // 璁剧疆鍥剧墖鍔犺浇/瑙ｇ爜杩囩▼涓敊璇椂鍊欐樉绀虹殑鍥剧墖
+		
+		.cacheInMemory(true)// 璁剧疆涓嬭浇鐨勫浘鐗囨槸鍚︾紦瀛樺湪鍐呭瓨涓�		
+		.cacheOnDisk(true)//璁剧疆涓嬭浇鐨勫浘鐗囨槸鍚︾紦瀛樺湪SD鍗′腑
+		
+		.displayer(new FadeInBitmapDisplayer(10))// 鏄惁鍥剧墖鍔犺浇濂藉悗娓愬叆鐨勫姩鐢绘椂闂�		.displayer(new RoundedBitmapDisplayer(200))
+		
+		.build();
+		
+		return options;
+	}
+
+}
